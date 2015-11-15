@@ -1,0 +1,12 @@
+<script src="/javascripts/note.js"></script>
+<div id="side-notebook">
+    <span>노트북</span> <button id="addBtn">+</button>
+    <input id="search" type="text">
+</div>
+
+<div id="main-note">
+    {{id}}<input type="text" class="noteTitle" value="{{title}}"/> <br/>
+    <textarea cols="30" rows="10" class="noteContent">{{content}}</textarea>
+    <button class="create">Create</button>
+    <button class="delete">Delete</button>
+</div>

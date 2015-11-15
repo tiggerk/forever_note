@@ -1,0 +1,144 @@
+html, body { height: 100%; }
+body { margin: 0; }
+ul { margin: 0; padding: 0; }
+li { list-style: none; }
+#side-notebook, #sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  border-right: 1px solid #bbb;
+}
+#side-notebook #search {
+  width: 200px;
+}
+#side-notebook .note button.xBtn { float: right }
+#main-note {
+  position: relative;
+  width: 550px;
+  margin: 40px 0 50px 260px;
+  padding: 20px;
+}
+#main {
+  position: relative;
+  /*width: 1000px;*/
+  height: 100%;
+  margin: 10px 0 50px 260px;
+  padding: 40px 0 0 5px;
+}
+#main .note {
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.note {
+  border: 1px solid #ddd;
+  width: 200px;
+  padding: 3px;
+  margin: 20px auto;
+  position: relative;
+}
+.pDate {
+  position: absolute;
+  bottom: 0;
+}
+.group {
+  border: 1px solid #ddd;
+  background-color: #ffee49;
+  width: 200px;
+  height: 150px;
+  padding: 3px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+#main #main-top {
+  position: absolute;
+  top: 0;
+  font-size: 1.5em;
+  /*margin-top: -50px;*/
+}
+.selected { border: 3px solid #000088; }
+input.noteTitle,
+input.search { border: 1px solid #ddd; width: 200px; height: 20px; margin-bottom: 30px; font-size: 1em; }
+textarea { border: 1px solid #ddd; width: 100%; height: 500px; font-size: 0.8em; }
+textarea.noteContent {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 500px;
+  font-size: .9em;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+.noteBg {
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*display: none;*/
+}
+.noteUpdate {
+  width: 550px;
+  height: 600px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  z-index: 100;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  background-color: #fff;
+}
+button.closeBtn { position: absolute; top: 10px; right: 10px; }
+button.xBtn { position: absolute; right: 3px; }
+button.groupXBtn { position: absolute; right: 3px; }
+.groupName {
+  border: 1.5px dashed #999;
+  padding: 3px;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-overflow: clip;
+  word-break: break-all;
+  white-space: normal;
+  /*line-height: 39px;*/
+  height: 100px;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*box-shadow: inset 0 0 0 1px #999;*/
+}
+textarea.groupNameInput {
+  display: none;
+  font-family: Arial;
+  font-size: 1.5em;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  vertical-align: top;
+  border: 1.5px solid #999;
+  padding: 3px;
+  box-sizing: border-box;
+  top: 23px;
+  left: 3px;
+  position: absolute;
+  resize: none;
+}
+textarea.groupNameInput:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+  outline: none;
+}
